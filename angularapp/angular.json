@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-currency-converter": {
+    "myapp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-currency-converter",
+            "outputPath": "dist/myapp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-currency-converter:build:production"
+              "browserTarget": "myapp:build:production"
             },
             "development": {
-              "browserTarget": "angular-currency-converter:build:development"
+              "browserTarget": "myapp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-currency-converter:build"
+            "browserTarget": "myapp:build"
           }
         },
         "test": {
@@ -98,6 +98,6 @@
     }
   },
   "cli": {
-    "analytics": "361a424a-8f2f-45ee-87aa-fa1d3db3f770"
+    "analytics": false
   }
 }
