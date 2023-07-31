@@ -1,0 +1,25 @@
+<div>
+    <form>
+      <p>From Currency</p>
+      <select id="fromCurrency" (change)="changeFc($event,'f')">
+        <option value="1.126735">USD</option>
+        <option value="0.876893">GBP</option>
+        <option value="79.677056">INR</option>
+      </select>
+      <input type="text" id="fc" value="" /><br /><br />
+      <p>To Currency</p>
+      <select id="toCurrency" (change)="changeFc($event,'t')">
+        <option value="1.126735">USD</option>
+        <option value="0.876893">GBP</option>
+        <option value="79.677056">INR</option>
+      </select>
+      <input type="text" id="tc" value="" /><br /><br />
+      <p>Amount</p>
+      <input type="text" id="amount" (change)="changeFc($event,'a')" value="" /><br /><br />
+      <input type="button" id="submitButton" (click)="submit()" value="Submit" /><br /><br />
+      <input type="button" (click)="reset()" value="Reset" />
+      <br /><br />
+      <input type="number" id="result" disabled /><br /><br />
+      <p id="resValue"></p>
+    </form>
+  </div>
